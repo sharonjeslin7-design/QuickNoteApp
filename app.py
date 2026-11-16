@@ -73,7 +73,7 @@ def delete_note(note_id):
         return jsonify({"error": "Note not found"}), 404
 
     return jsonify({"message": "Note deleted successfully"})
+init_db()
 
 if __name__ == "__main__":
-    init_db()
     app.run(debug=True)
